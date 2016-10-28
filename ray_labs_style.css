@@ -1,3 +1,13 @@
 body {
-  background-color: #b3cedb
+  background: linear-gradient(to top, #091726
+ , #00244c);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ margin = 0;
+ height: 100%;
+ color: white;
+ font-family: 'Vollkorn', serif;
+}
+p {
+  font-family: 'Droid Sans', sans-serif;
 }
