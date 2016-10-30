@@ -69,7 +69,10 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: -webkit-linear-gradient(+90deg,#8eb7ce, #f4fbff);
+  background: -webkit-linear-gradient(90deg,#8eb7ce, #f4fbff);
+  background: -o-linear-gradient(90deg, #8eb7ce, #f4fbff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(90deg, #8eb7ce, #f4fbff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top, #8eb7ce, #f4fbff); /* Standard syntax */
   color: white;
 }
 header .container {
@@ -514,4 +517,24 @@ fieldset[disabled] .btn-success.active {
 }
 .offset{
   margin-top:-750px;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  color: #fff;
+  cursor: default;
+  background-color: #8eb7ce;
+  border-color: #8eb7ce;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  transition: all .6s;
+}
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+  color: white;
+  cursor: default;
+  background-color: #373444;
+  border-color: #373444;
+    all 0.3s ease-in-out;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
 }
