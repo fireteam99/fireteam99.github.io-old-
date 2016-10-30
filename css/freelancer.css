@@ -18,7 +18,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #18BC9C;
+  color: #8eb7ce;
   outline: none;
 }
 h1,
@@ -54,7 +54,7 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #18BC9C;
+  background-color: #a6c7da;
   color: white;
 }
 hr.star-primary {
@@ -69,7 +69,7 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #18BC9C;
+  background: -webkit-linear-gradient(+90deg,#8eb7ce, #f4fbff);
   color: white;
 }
 header .container {
@@ -104,7 +104,7 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background: #2C3E50;
+  background: #373444;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -113,6 +113,7 @@ header .intro-text .skills {
 .navbar-custom a:focus {
   outline: none;
 }
+
 .navbar-custom .navbar-brand {
   color: white;
 }
@@ -129,8 +130,12 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #18BC9C;
+  color: #373444;
   outline: none;
+  background-color: white;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
@@ -138,13 +143,13 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #18BC9C;
+  background: #8eb7ce;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #18BC9C;
+  background: #8eb7ce;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -154,9 +159,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #18BC9C;
+  background-color: #8eb7ce;
   color: white;
-  border-color: #18BC9C;
+  border-color: #8eb7ce;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -186,7 +191,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #18BC9C;
+  background: #a6c7da;
   color: white;
 }
 @media (max-width: 767px) {
@@ -208,7 +213,7 @@ section.success {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(24, 188, 156, 0.9);
+  background: rgba(142, 183, 206, 0.9);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -302,17 +307,17 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #2C3E50;
+  background-color: #878a92;
 }
 footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
   padding: 25px 0;
-  background-color: #233140;
+  background-color: #373444;
 }
 .btn-outline {
-  color: gray;
+  color: white;
   font-size: 20px;
   border: solid 2px gray;
   background: transparent;
@@ -323,15 +328,18 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: black;
-  background: transparent;
-  border: solid 2px black;
+  color: #878a92;
+  background: white;
+  border: solid 2px white;
 }
+
 .btn-primary {
-  color: gray;
-  background-color: #2C3E50;
+  color: #373444;
+  background-color: white;
   border-color: #2C3E50;
   font-weight: 700;
+  border-width: 2px;
+  transition: all 0.3s ease-in-out;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -339,8 +347,9 @@ footer .footer-below {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #1a242f;
-  border-color: #161f29;
+  background-color: #8eb7ce;
+  border-color: #8eb7ce;
+  transition: all 0.3s ease-in-out;
 }
 .btn-primary:active,
 .btn-primary.active,
