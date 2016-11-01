@@ -133,9 +133,9 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #373444;
+  color: #8eb7ce;
   outline: none;
-  background-color: white;
+  background-color: transparent;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
