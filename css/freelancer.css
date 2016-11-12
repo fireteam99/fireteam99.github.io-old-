@@ -538,3 +538,8 @@ fieldset[disabled] .btn-success.active {
     transition-timing-function: ease-in-out;
     transition-delay: initial;
 }
+@media (max-width: 1200px) {
+  section {
+    text-align: center;
+  }
+}
